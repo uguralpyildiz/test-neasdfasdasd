@@ -19,7 +19,7 @@ html{
 }
 @font-face {
     font-family: "myfont";
-    src: url("/FONTS/WOFF/Nizzoli-Regular.woff") format("woff");
+    src: url("FONTS/WOFF/Nizzoli-Regular.woff") format("woff");
 }
 body{
     font-family: "myfont", sans-serif;
