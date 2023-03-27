@@ -6,14 +6,16 @@ const logoi = document.querySelector(".logo-i");
 document.addEventListener("scroll", () => {
 
     crScrollPos = window.pageYOffset;
-    if (crScrollPos > 100) {
+    if (crScrollPos > 150) {
         navSet.style.top = "-400px";
         document.getElementById("logo").style.width = "350px";
         document.getElementById("logo").src = "Texep_Logo_Web_Light.svg";
        
     }
 
-    if (crScrollPos >= 400) {
+
+
+    if (crScrollPos >= 150) {
         navSet.style.position = "fixed !important";
         navSet.style.top = "0px";
         navSet.style.background = "linear-gradient(320deg, #2b2e49 40%, #353853 40%)";
@@ -22,7 +24,7 @@ document.addEventListener("scroll", () => {
         
     }
 
-    if (crScrollPos < 100) {
+    if (crScrollPos < 150) {
         navSet.style.position = "";
         navSet.style.background = "";
         navSet.style.top = "";
