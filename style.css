@@ -26,17 +26,18 @@ body{
 }
 #companiess{
     position: relative;
-    padding: 25px 0;
-    background-color: #fff;
+   
+    background: #fff;
 }
+image.png
 #products{
     position: relative;
     background-color: #f4f4f4;
 }
 #companiess2{
     position: relative;
-    padding: 25px 0;
-    background: #f4f4f4;
+    
+   
     
 }
 .container{
@@ -46,17 +47,64 @@ body{
 .companies-content{
     display: flex;
     justify-content: space-between;
-   
+    width: 100%;
+}
+.pdf{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 280px;
+    border: 3px dotted #565b60;
+    font-size: 16px;
+    background: linear-gradient(320deg, #2B2E49 65%, #353853 65%);
+    color: #fff;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 15px #00000020;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s ease;
+}
+.pdf:hover{
+    border: 3px solid #565b60;
+    transform: scale(1.05);
+}
+
+.pdf::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: #33375b;
+    z-index: -1;
+    transition: .3s ease;
+}
+.pdf:hover::before {
+    width: 100%;
+}
+.pdf i{
+    font-size: 28px;
 }
 .flexing h1{
     font-size: 36px;
-    padding:5px 10px;
+    padding: 13px;
     border-left: 7px solid #F37743;
-    margin: 25px 0;
+    margin-top: 25px ;
 }
 .flexing{
-   color: #353535;
-   width: 80%;
+   color: #232633;
+   width: 100%;
+    text-align: justify;
+        text-justify: inter-word;
+}
+.flexing div{
+    line-height: 2rem;
 }
 .flexing:nth-child(2){
     width: 20%;
@@ -117,14 +165,7 @@ body{
     align-items: center;
 }
 
-.video{
-    max-width: 1200px;
-    height: 500px;
-    margin:50px auto;
-    border-radius: 5px;
-    background: linear-gradient(to top, #000000,#383838);
-    box-shadow: -15px 15px 0 #00000010;
-}
+
 
 .swiper-slide2 img {
     display: block;
@@ -146,18 +187,34 @@ body{
 }
 .img-content{
     display: flex;
+    align-items: center;
     gap: 25px;
     margin: 10px auto;
+    
+}
+.bgbox{
+    width: 1200px !important;
+    margin-top: 50px;
+    box-shadow: -15px 15px 0 #00000010;
+}
+.video {
+
+    border-radius: 5px;
+    background: linear-gradient(to top, #000000, #383838);
+    box-shadow: -15px 15px 0 #00000010;
 }
 .img-box{
     position: relative;
-    height: auto;
-    width: 50%;
-    background: #1B305D;
+    height: 340px;
+    width: 600px;
+    background: #b2b2b2;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: -15px 15px 0 #00000010;
     transition: .3s ease;
+}
+.img-box img{
+    object-fit: cover;
 }
 .img-box img:hover{
     transform: scale(1.02);
@@ -187,12 +244,13 @@ body{
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
     bottom: 0;
     left: 0;
-    text-align: left;
-    height: 80px;
+    text-align: center;
+    height: 45px;
     font-size: 16px;
-    background: #00000080;
+    background: #0c112d80;
     color: #f4f4f4;
     width: 100%;
     padding: 10px;
@@ -249,11 +307,11 @@ body{
     color: #f4f4f4;
 }
 .about-alt{
-    font-size: 18px;
+    font-size: 20px;
     max-width: 1200px;
     line-height: 2.2rem;
     text-align: left;
-    margin-top: 40px;
+    margin-bottom: 100px;
     color: #f4f4f4;
 }
 
@@ -377,7 +435,7 @@ body{
     /* box-shadow: 0 0 15px #00000050; */
 }
 .about-head{
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
 }
 .align-btn{
@@ -392,7 +450,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 0;
     color: #fff;
 }
 .logo{
