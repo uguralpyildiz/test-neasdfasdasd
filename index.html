@@ -76,8 +76,8 @@
                         <i class="fa-solid fa-globe"></i>English (EN)
                         <div class="language">
                             <!-- <a href="#">English</a> -->
-                            <a href="#">Deutch</a>
-                            <a href="#">French</a>
+                            <a href="#">Deutsch (DE)</a>
+                            <a href="#">Français (FR)</a>
                         </div>
                     </button>
     
@@ -113,13 +113,15 @@
                 <img src="img/3.jpg" />
             </div>
         </div>
-        <!-- <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
-        <div class="swiper-pagination"></div> -->
+
         <!-- <div class="container">
             <div class="header-companies">Companies</div>
         </div> -->
     </div>
+        <div class="align-btn">
+            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+        </div>
     <svg class="sharp" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
         xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -386,15 +388,21 @@
         spaceBetween: 30,
         effect: "fade",
         autoplay:true,
+        loop:true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        loop:true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true
+        },
+
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+        speed:1000,
     });
 
        var swiper = new Swiper(".mySwiper2", {
