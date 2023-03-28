@@ -20,7 +20,7 @@ document.addEventListener("scroll", () => {
         navSet.style.top = "0px";
         navSet.style.background = "linear-gradient(320deg, #2b2e49 40%, #353853 40%)";
         document.getElementById("logo").src = "logo_beyaz.svg";
-        document.getElementById("logo").style.width = "180px";
+        document.getElementById("logo").style.width = "160px";
         
     }
 
