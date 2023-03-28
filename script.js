@@ -28,7 +28,8 @@ document.addEventListener("scroll", () => {
         navSet.style.position = "";
         navSet.style.background = "";
         navSet.style.top = "";
-        
+        document.getElementById("logo").src = "Texep_Logo_Web_Light.svg";
+        document.getElementById("logo").style.width = "350px";
     }
 });
 
