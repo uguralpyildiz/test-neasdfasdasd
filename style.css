@@ -378,7 +378,7 @@ body{
 .align-btn{
     position: absolute;
     top: 48%;
-    z-index: 9999;
+    
     display: flex;
     width: 100%;
     align-items: center;
